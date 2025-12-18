@@ -29,24 +29,24 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
 #model_cnn = base_red.model_cnn.eval()              #-> Red base
-model_cnn = transfer_learning.model_cnn.eval()     #-> Red Transfer Learning
+#model_cnn = transfer_learning.model_cnn.eval()     #-> Red Transfer Learning
 
 
 
-
-all_preds = []
-all_labels = []
-with torch.no_grad():                   #Se quita el cálculo del gradiente
-    for inputs, labels in test_loader:  #Para cada imagen y label
-        inputs, labels = inputs.to(device), labels.to(device)
-        outputs = model_cnn(inputs)     #Inicia predicción
-        _, predicted = torch.max(outputs, 1)
-        all_preds.extend(predicted.cpu().numpy())
-        all_labels.extend(labels.cpu().numpy())
-cm = confusion_matrix(all_labels, all_preds)    #Se crea la matriz
-plt.figure(figsize=(10, 8))
-sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=classes, yticklabels=classes)
-plt.xlabel('Predicted')
-plt.ylabel('True')
-plt.title('Confusion Matrix')
-plt.show()
+def matriz_confusion(model_cnn):
+    all_preds = []
+    all_labels = []
+    with torch.no_grad():                   #Se quita el cálculo del gradiente
+        for inputs, labels in test_loader:  #Para cada imagen y label
+            inputs, labels = inputs.to(device), labels.to(device)
+            outputs = model_cnn(inputs)     #Inicia predicción
+            _, predicted = torch.max(outputs, 1)
+            all_preds.extend(predicted.cpu().numpy())
+            all_labels.extend(labels.cpu().numpy())
+    cm = confusion_matrix(all_labels, all_preds)    #Se crea la matriz
+    plt.figure(figsize=(10, 8))
+    sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=classes, yticklabels=classes)
+    plt.xlabel('Predicted')
+    plt.ylabel('True')
+    plt.title('Confusion Matrix')
+    plt.show()

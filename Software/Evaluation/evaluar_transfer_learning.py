@@ -13,6 +13,7 @@ from Software.Utils.Graficos import plot_training_history
 from Software.Redes.Transfer_Learning import *
 from Software.Utils.data import train_loader, test_loader
 from Software.Utils.utility import evaluate, train_with_validation
+import torch.nn as nn
 
 
 # --- ETAPA 1: Creación de pesos desde 0 ---
@@ -26,7 +27,7 @@ model_cnn, history = train_with_validation(
     epochs=EPOCHS,
 )
 
-#torch.save(model_cnn.state_dict(), "model_weights.pth")
+#red.model_cnn.load_state_dict(torch.load("../Weights/model_weights_Transfer_Learning.pth"))
 
 
 # --- ETAPA 2: fine-tuning (desbloquear capas profundas) ---
@@ -41,7 +42,6 @@ optimizer = torch.optim.Adam(filter(lambda p: p.requires_grad, model_cnn.paramet
 
 # --- ETAPA 3: Validación Final con Pesos Cargados ---
 
-#torch.load(red.model_cnn.state_dict(), "model_weights.pth")
 print("\n\n------------------------ Ejecutando la red con los pesos calculados.... -------------------------")
 model_cnn, history = train_with_validation(
     model=model_cnn,
@@ -53,6 +53,7 @@ model_cnn, history = train_with_validation(
 )
 plot_training_history(history)
 
+#torch.save(red.model_cnn.state_dict(), "model_weights_Transfer_Learning.pth")
 
 # --- Evaluación final ---
 print("\nEvaluación final en test:")
