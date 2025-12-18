@@ -1,5 +1,6 @@
 # ReconocimientoDeCartas
 
+Dataset utilizado = https://www.kaggle.com/datasets/gpiosenka/cards-image-datasetclassification
 
 |**Configuración**|**Resultados sin pesos**|**Resultados con pesos**|**Referencia en Commit**|
 |:-:|:-:|:-:|:-:|
