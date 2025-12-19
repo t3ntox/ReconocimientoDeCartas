@@ -14,7 +14,7 @@ dev_loader = test_loader
 seed_everything(SEED)
 
 #Quitar comentario tras ejecutar por primera vez
-#red.model_cnn.load_state_dict(torch.load("../Weights/model_weights.pth"))
+red.model_cnn.load_state_dict(torch.load("../Weights/model_weights.pth"))
 
 red.model_cnn, history = train_with_validation(
     model=red.model_cnn,

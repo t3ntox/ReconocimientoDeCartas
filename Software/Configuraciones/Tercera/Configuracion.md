@@ -1,4 +1,4 @@
-# **Configuración 2**
+# **Configuración 3**
 
 Esta es la configuracion estandar de nuestra red neuronal.
 

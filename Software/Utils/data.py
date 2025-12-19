@@ -34,11 +34,11 @@ classes = ("AS_T","AS_P","AS_D","AS_C","2_T","2_P","2_D","2_C",
          "J_T","J_P","J_D","J_C","Q_T","Q_P","Q_D","Q_C",
         "K_T","K_P","K_D","K_C", "JAJAS")
 
-train_set = datasets.ImageFolder(root='G:/Mi unidad/Uni/3º Curso/FSI/Práctica Detección de Cartas/archive/train', transform=train_transform)
-test_set = datasets.ImageFolder(root='G:/Mi unidad/Uni/3º Curso/FSI/Práctica Detección de Cartas/archive/test', transform=test_transform)
+train_set = datasets.ImageFolder(root='URL de train', transform=train_transform)
+test_set = datasets.ImageFolder(root='URL de test', transform=test_transform)
 
 #Mismo Data Augmentation el test
-validation_set = datasets.ImageFolder(root='G:/Mi unidad/Uni/3º Curso/FSI/Práctica Detección de Cartas/archive/valid', transform=test_transform)
+validation_set = datasets.ImageFolder(root='URL de valid', transform=test_transform)
 
 train_loader = DataLoader(train_set, batch_size=BATCH_SIZE, shuffle=True)
 test_loader = DataLoader(test_set, batch_size=BATCH_SIZE, shuffle=False)

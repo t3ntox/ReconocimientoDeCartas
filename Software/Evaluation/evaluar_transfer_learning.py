@@ -6,9 +6,7 @@ para entrenarla.
 
 Después vuelve a evaluar
 """
-
-
-
+from Software.Evaluation.matriz_confusion import matriz_confusion
 from Software.Utils.Graficos import plot_training_history
 from Software.Redes.Transfer_Learning import *
 from Software.Utils.data import train_loader, test_loader
@@ -44,3 +42,5 @@ print("\nEvaluación final en test:")
 seed_everything(SEED)
 acc = evaluate(model_cnn, test_loader)
 print(f'Accuracy final en test: {acc:.2f}%')
+
+matriz_confusion(model_cnn)
