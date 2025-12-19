@@ -2,13 +2,14 @@
 
 Esta es la configuracion estandar de nuestra red neuronal.
 
-# ***Hiperparámetros***
-EPOCHS = 15
-LR = 1e-3
-SEED = 0
-BATCH_SIZE =32
-FactorReduccion = 0.75
-Paciencia = 3
+### **Hiperparámetros**
+
+EPOCHS = 15                            
+LR = 1e-3                          
+SEED = 0                      
+BATCH_SIZE =32                    
+FactorReduccion = 0.75                 
+Paciencia = 3                   
 
 **Resultados sin pesos**
 
