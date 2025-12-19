@@ -23,16 +23,6 @@ import matplotlib.pyplot as plt
 ## Evaluación
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-
-#Red base y Transfer Learning
-#Descomentar la red que se quiera evaluar
-
-
-#model_cnn = base_red.model_cnn.eval()              #-> Red base
-#model_cnn = transfer_learning.model_cnn.eval()     #-> Red Transfer Learning
-
-
-
 def matriz_confusion(model_cnn):
     all_preds = []
     all_labels = []

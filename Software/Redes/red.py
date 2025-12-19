@@ -49,7 +49,6 @@ class SimpleCNN(nn.Module):
         x = self.relu(self.conv3(x))
         x = self.pool(x)
         x = x.view(x.size(0), -1)
-        #x = x.view(-1, 512 * 8 * 8)          # Aplanar PREGUNTAR PORQUE 512 AQUI AL PROFE
         x = self.relu(self.fc1(x))
         x = self.dropout(x)
         x = self.relu(self.fc2(x))
