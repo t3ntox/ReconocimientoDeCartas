@@ -24,7 +24,7 @@ Software/
                                                  
 ## 🔗 Configuraciones disponibles
 - [Configuración 1](Software/Configuraciones/Primera/Configuracion.md)
-- [Configuración 2](Software/Configuraciones/Segunda/Configuracion.md) 
+- [Configuración 2](Software/Configuraciones/Segunda/Config.md) 
 - [Configuración 3](Software/Configuraciones/Tercera/Configuracion.md)
 - [Configuración 4](Software/Configuraciones/Cuarta/Configuracion.md)
 - [Configuración 5](Software/Configuraciones/Quinta/Configuracion.md)
