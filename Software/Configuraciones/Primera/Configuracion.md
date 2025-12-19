@@ -10,7 +10,7 @@
 | **FactorReduccion** | 0.75 |
 | **Paciencia**   | 3       |
 
-
+                                                                                      
 ## **1️⃣ Resultados Sin Pesos** 
 ```
 [Epoch 1] train_loss: 2.936 | train_acc: 20.32% | dev_loss: 2.040 | dev_acc: 33.96% | lr=0.001000  
@@ -35,7 +35,7 @@ Evaluación final en test:
 
 ![Descripción de la imagen](Figure_1B.png)
                                                                 
-                                                                                      
+                                                                                                                                          
 ## **2️⃣ Resultados Con Pesos**
 ```
 [Epoch 1] train_loss: 0.754 | train_acc: 77.81% | dev_loss: 0.827 | dev_acc: 81.13% | lr=0.001000  
@@ -59,7 +59,7 @@ Evaluación final en test:
 
 
 ![Descripción de la imagen](Figure_2B.png)
-
+                                                                                         
 ## **3️⃣ Resultados Con Transfer Learning** 🎉
 ```
 [Epoch 1] train_loss: 2.521 | train_acc: 26.25% | dev_loss: 1.441 | dev_acc: 53.21% | lr=0.001000  
