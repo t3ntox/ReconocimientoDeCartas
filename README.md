@@ -15,7 +15,7 @@ Software/
   ├── Evaluation/                         
   │     └── Scripts de evaluación, entrenamiento y métricas.                      
   ├── Redes/                          
-  │     └── Arquitecturas de CNN implementadas.                        
+  │     └── Arquitecturas de CNN y de Transfer Learning.                        
   ├── Utils/                      
   │     └── Funciones auxiliares, utilidades e hiperparámetros.                       
   └── Weights/                          
