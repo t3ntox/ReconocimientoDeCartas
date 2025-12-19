@@ -1,21 +1,22 @@
-# **Configuración 2**
+# 🎯 Configuración 4
 
 Configuración algo más conservadora. Con menos LR y algunas épocas más,  
 de esta manera la red
 avanzará más lento pero con más precisión
 
-### **Hiperparametros**
+## **⚙️ Hiperparámetros**    
 
-**EPOCHS** = 15             
-**LR** = 4e-3               
-**SEED** = 0                
-**BATCH_SIZE** = 16         
-**FactorReduccion** = 0.75  
-**Paciencia** = 3      
+| Parámetro       | Valor   |
+|-----------------|---------|
+| **EPOCHS**      | 15      |
+| **LR**          | 4e-3    |
+| **SEED**        | 0       |
+| **BATCH_SIZE**  | 16      |
+| **FactorReduccion** | 0.5 |
+| **Paciencia**   | 5       |
 
-## Resultados sin pesos
-
-
+## **1️⃣ Resultados Sin Pesos** 
+```
 _[Epoch 1]_ train_loss: 3.005 | train_acc: 19.05% | dev_loss: 2.061 | dev_acc: 36.23% | lr=0.000500  
 _[Epoch 2]_ train_loss: 2.082 | train_acc: 39.28% | dev_loss: 1.434 | dev_acc: 56.23% | lr=0.000500  
 _[Epoch 3]_ train_loss: 1.622 | train_acc: 54.83% | dev_loss: 1.065 | dev_acc: 70.57% | lr=0.000500  
@@ -35,21 +36,21 @@ _[Epoch 16]_ train_loss: 0.402 | train_acc: 87.67% | dev_loss: 0.734 | dev_acc: 
 _[Epoch 17]_ train_loss: 0.343 | train_acc: 89.97% | dev_loss: 0.761 | dev_acc: 83.77% | lr=0.000375   
 _[Epoch 18]_ train_loss: 0.300 | train_acc: 90.95% | dev_loss: 0.737 | dev_acc: 84.15% | lr=0.000375  
 _[Epoch 19]_ train_loss: 0.301 | train_acc: 90.79% | dev_loss: 0.734 | dev_acc: 84.15% | lr=0.000375  
-_[Epoch 20]_ train_loss: 0.270 | train_acc: 91.51% | dev_loss: 0.729 | dev_acc: 86.04% | lr=0.000375   
+_[Epoch 20]_ train_loss: 0.270 | train_acc: 91.51% | dev_loss: 0.729 | dev_acc: 86.04% | lr=0.000375
+```
 
-Evaluación final en test **Accuracy final en test: 86.04%** 
+Evaluación final en test:
+**Accuracy final en test: 86.04%** 
 
-**Función de pérdida y de precisión**
 
 ![Descripción de la imagen](Sin_pesos_2A.png)
 
-**Matríz de Confusión**
 
 ![Descripción de la imagen](Sin_pesos_2B.png)
   
   
-**Resultados con pesos**
-
+## **2️⃣ Resultados Con Pesos**
+```
 _[Epoch 1]_ train_loss: 0.062 | train_acc: 98.20% | dev_loss: 1.571 | dev_acc: 82.26% | lr=0.000500  
 _[Epoch 2]_ train_loss: 0.093 | train_acc: 97.31% | dev_loss: 1.315 | dev_acc: 83.02% | lr=0.000500  
 _[Epoch 3]_  train_loss: 0.093 | train_acc: 97.63% | dev_loss: 1.523 | dev_acc: 79.62% | lr=0.000500  
@@ -70,20 +71,22 @@ _[Epoch 17]_ train_loss: 0.049 | train_acc: 98.66% | dev_loss: 1.073 | dev_acc: 
 _[Epoch 18]_ train_loss: 0.054 | train_acc: 98.69% | dev_loss: 1.164 | dev_acc: 81.13% | lr=0.000250  
 _[Epoch 19]_ train_loss: 0.051 | train_acc: 98.32% | dev_loss: 1.190 | dev_acc: 84.53% | lr=0.000250  
 _[Epoch 20]_ train_loss: 0.054 | train_acc: 98.48% | dev_loss: 1.214 | dev_acc: 85.31% | lr=0.000250  
+```
 
-Evaluación final en test: **Accuracy final de 85.31%**
+Evaluación final en test: 
+**Accuracy final de 85.31%**
 
-**Función de pérdida y de precisión**
+
 
 ![Descripción de la imagen](Pesos_2A.png)
 
-**Matríz de Confusión**
+
 
 ![Descripción de la imagen](Pesos_2B.png)
 
 
-**Referencia en Commit**
-
+## **3️⃣ Resultados Con Transfer Learning** 🎉
+```
 _[Epoch 1]_ train_loss: 2.335 | train_acc: 33.17% | dev_loss: 1.185 | dev_acc: 64.15% | lr=0.000500  
 _[Epoch 2]_ train_loss: 1.301 | train_acc: 61.40% | dev_loss: 0.586 | dev_acc: 83.77% | lr=0.000500  
 _[Epoch 3]_ train_loss: 0.925 | train_acc: 72.30% | dev_loss: 0.393 | dev_acc: 90.19% | lr=0.000500  
@@ -104,13 +107,14 @@ _[Epoch 17]_ train_loss: 0.121 | train_acc: 96.04% | dev_loss: 0.242 | dev_acc: 
 _[Epoch 18]_ train_loss: 0.112 | train_acc: 96.58% | dev_loss: 0.214 | dev_acc: 94.72% | lr=0.000250  
 _[Epoch 19]_ train_loss: 0.112 | train_acc: 96.30% | dev_loss: 0.291 | dev_acc: 92.83% | lr=0.000250  
 _[Epoch 20]_ train_loss: 0.111 | train_acc: 96.54% | dev_loss: 0.216 | dev_acc: 93.58% | lr=0.000250  
+```
+Evaluación final en test: 
+**Accuracy final en test: 93.58%**
 
-Evaluación final en test **Accuracy final en test: 93.58%**
 
-## Función de pérdida y de precisión
 
 ![Descripción de la imagen](Trasnfer_3A.png)
 
-## Matríz de Confusión
+
 
 ![Descripción de la imagen](Transfer_3B.png)
