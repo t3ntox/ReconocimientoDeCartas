@@ -2,14 +2,14 @@
 
 Esta es la configuracion estandar de nuestra red neuronal.
 
-### **Hiperparametros**
+### **Hiperparámetros**
 
-EPOCHS = 20
-LR = 1e-3
-SEED = 0
-BATCH_SIZE =16
-FactorReduccion = 0.3  
-Paciencia = 5     
+EPOCHS = 20              
+LR = 1e-3                      
+SEED = 0                       
+BATCH_SIZE =16                         
+FactorReduccion = 0.3                          
+Paciencia = 5                                 
 
 **Resultados sin pesos**
 
@@ -37,11 +37,11 @@ Paciencia = 5
 Evaluación final en test:
 **Accuracy final en test: 84.91%** 
 
-Función de pérdida y de precision
+Función de pérdida y de precisión
 
 ![Descripción de la imagen](Figure_1A.png)
 
-Matriz de Confusion
+Matriz de Confusión
 
 ![Descripción de la imagen](Figure_1B.png)
 
@@ -71,11 +71,11 @@ Matriz de Confusion
 Evaluación final en test:
 **Accuracy final en test: 83.02%**
 
-Función de pérdida y de precision
+Función de pérdida y de precisión
 
 ![Descripción de la imagen](Figure_2A.png)
 
-Matriz de Confusion
+Matriz de Confusión
 
 ![Descripción de la imagen](Figure_2B.png)
 
@@ -105,10 +105,10 @@ Matriz de Confusion
 Evaluación final en test:
 **Accuracy final en test: 94.72%**
 
-Función de pérdida y de precision
+Función de pérdida y de precisión
 
 ![Descripción de la imagen](Figure_3A.png)
 
-Matriz de Confusion
+Matriz de Confusión
 
 ![Descripción de la imagen](Figure_3B.png)
