@@ -1,18 +1,20 @@
-# **Configuración 4**
+# 🎯 Configuración 4
 
-Esta es la configuracion estandar de nuestra red neuronal.
 
-### **Hiperparámetros**
+## **⚙️ Hiperparámetros**
 
-EPOCHS = 20              
-LR = 1e-3                      
-SEED = 0                       
-BATCH_SIZE =16                         
-FactorReduccion = 0.3                          
-Paciencia = 5                                 
-
-**Resultados sin pesos**
-
+| Parámetro       | Valor   |
+|-----------------|---------|
+| **EPOCHS**      | 20      |
+| **LR**          | 1e-3    |
+| **SEED**        | 0       |
+| **BATCH_SIZE**  | 16      |
+| **FactorReduccion** | 0.3 |
+| **Paciencia**   | 5       |
+                            
+                                                                           
+## **1️⃣ Resultados Sin Pesos** 
+```
 [Epoch 1] train_loss: 2.936 | train_acc: 20.32% | dev_loss: 2.040 | dev_acc: 33.96% | lr=0.001000  
 [Epoch 2] train_loss: 2.045 | train_acc: 40.39% | dev_loss: 1.359 | dev_acc: 61.13% | lr=0.001000  
 [Epoch 3] train_loss: 1.609 | train_acc: 54.77% | dev_loss: 1.135 | dev_acc: 68.30% | lr=0.001000  
@@ -33,20 +35,20 @@ Paciencia = 5
 [Epoch 18] train_loss: 0.503 | train_acc: 84.77% | dev_loss: 0.831 | dev_acc: 82.64% | lr=0.001000  
 [Epoch 19] train_loss: 0.485 | train_acc: 85.85% | dev_loss: 0.808 | dev_acc: 81.89% | lr=0.000300  
 [Epoch 20] train_loss: 0.371 | train_acc: 88.84% | dev_loss: 0.825 | dev_acc: 84.91% | lr=0.000300  
-
+```
 Evaluación final en test:
 **Accuracy final en test: 84.91%** 
 
-Función de pérdida y de precisión
+
 
 ![Descripción de la imagen](Figure_1A.png)
 
-Matriz de Confusión
+
 
 ![Descripción de la imagen](Figure_1B.png)
-
-**Resultados con pesos**
-
+                                                                   
+## **2️⃣ Resultados Con Pesos**
+```
 [Epoch 1] train_loss: 0.451 | train_acc: 86.45% | dev_loss: 0.903 | dev_acc: 83.02% | lr=0.001000  
 [Epoch 2] train_loss: 0.437 | train_acc: 87.75% | dev_loss: 0.963 | dev_acc: 79.62% | lr=0.001000  
 [Epoch 3] train_loss: 0.387 | train_acc: 88.79% | dev_loss: 1.039 | dev_acc: 79.62% | lr=0.001000  
@@ -67,20 +69,20 @@ Matriz de Confusión
 [Epoch 18] train_loss: 0.272 | train_acc: 91.92% | dev_loss: 1.054 | dev_acc: 82.26% | lr=0.000300  
 [Epoch 19] train_loss: 0.193 | train_acc: 94.27% | dev_loss: 0.960 | dev_acc: 84.15% | lr=0.000300  
 [Epoch 20] train_loss: 0.185 | train_acc: 94.46% | dev_loss: 0.846 | dev_acc: 83.02% | lr=0.000300  
-
+```
 Evaluación final en test:
 **Accuracy final en test: 83.02%**
 
-Función de pérdida y de precisión
+
 
 ![Descripción de la imagen](Figure_2A.png)
 
-Matriz de Confusión
+
 
 ![Descripción de la imagen](Figure_2B.png)
-
-**Resultados usando Transfer Leaarning**|
-
+                                                                                                        
+## **3️⃣ Resultados Con Transfer Learning** 🎉
+```
 [Epoch 1] train_loss: 2.521 | train_acc: 26.25% | dev_loss: 1.441 | dev_acc: 53.21% | lr=0.001000  
 [Epoch 2] train_loss: 1.582 | train_acc: 51.11% | dev_loss: 0.892 | dev_acc: 71.70% | lr=0.001000  
 [Epoch 3] train_loss: 1.185 | train_acc: 63.93% | dev_loss: 0.623 | dev_acc: 81.89% | lr=0.001000  
@@ -101,14 +103,14 @@ Matriz de Confusión
 [Epoch 18] train_loss: 0.328 | train_acc: 90.46% | dev_loss: 0.289 | dev_acc: 92.08% | lr=0.000300  
 [Epoch 19] train_loss: 0.194 | train_acc: 94.08% | dev_loss: 0.188 | dev_acc: 93.58% | lr=0.000300  
 [Epoch 20] train_loss: 0.152 | train_acc: 95.23% | dev_loss: 0.185 | dev_acc: 94.72% | lr=0.000300  
-
+```
 Evaluación final en test:
 **Accuracy final en test: 94.72%**
 
-Función de pérdida y de precisión
+
 
 ![Descripción de la imagen](Figure_3A.png)
 
-Matriz de Confusión
+
 
 ![Descripción de la imagen](Figure_3B.png)
