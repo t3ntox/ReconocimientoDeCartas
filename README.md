@@ -22,7 +22,7 @@ Software/
         └── Pesos de modelos entrenados.
 ```
                                                  
-## 🔗 Configuraciones disponibles:
+## 🔗 Configuraciones disponibles
 - [Configuración 1](Software/Configuraciones/Primera/Configuracion.md)
 - [Configuración 2](Software/Configuraciones/Segunda/Configuracion.md) 
 - [Configuración 3](Software/Configuraciones/Tercera/Configuracion.md)
