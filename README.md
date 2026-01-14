@@ -58,3 +58,9 @@ ENTRENAMIENTO:
 - [Configuración 4](Software/Configuraciones/Cuarta/Configuracion.md)
 - [Configuración 5](Software/Configuraciones/Quinta/Configuracion.md)
 
+## 👥 Desarrolladores
+
+- [@Arael J](https://github.com/xAraelx)
+- [@Texenery Bordón Rodríguez](https://github.com/texem4k)
+- [@Vidal](https://github.com/t3ntox)
+
